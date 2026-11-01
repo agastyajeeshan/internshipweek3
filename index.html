@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Northstar Studio creates thoughtful digital brands and experiences.">
+  <title>Northstar Studio | Interactive Digital Experiences</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Northstar Studio home">northstar<span>.</span></a>
+      <button class="menu-button" id="menuButton" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Our work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Toggle theme">☾</button>
+        <a class="button button-dark nav-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container reveal" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> INDEPENDENT DIGITAL STUDIO</p>
+        <h1>Make your next<br>move <em>matter.</em></h1>
+        <p class="hero-description">We partner with ambitious people to build thoughtful brands, useful digital products and experiences that move business forward.</p>
+        <div class="hero-actions">
+          <a class="button button-accent" href="#work">Explore our work <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#about">Get to know us <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-note"><span class="note-line"></span><span>Strategy, design & technology — working as one.</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Abstract studio artwork">
+        <div class="visual-top"><span>SELECTED THOUGHTS</span><span>01 / 04</span></div>
+        <div class="artwork">
+          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+          <div class="art-sun"></div><div class="art-block"></div>
+          <div class="art-caption">IDEAS IN<br>MOTION</div><span class="art-star">✳</span>
+        </div>
+        <div class="visual-bottom"><span>Curiosity creates possibility.</span><span>EST. 2026</span></div>
+        <div class="floating-label"><span class="label-icon">✦</span><span><strong>Good ideas,</strong><small>made real.</small></span></div>
+      </div>
+    </section>
+
+    <section class="intro-strip reveal">
+      <div class="container intro-inner">
+        <p>GOOD WORK STARTS WITH<br><strong>THE RIGHT QUESTIONS.</strong></p>
+        <p class="intro-detail">We bring clarity to complexity and turn bold thinking into meaningful outcomes.</p>
+        <span class="intro-mark" aria-hidden="true">✳</span>
+      </div>
+    </section>
+
+    <section class="section container reveal" id="services">
+      <div class="section-heading">
+        <div><p class="eyebrow">WHAT WE DO</p><h2>Small team.<br><em>Big-picture thinking.</em></h2></div>
+        <p class="section-lead">From the first spark to the final pixel, we connect the dots between what your business needs and what your audience loves.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card"><span class="card-number">01</span><div class="service-icon">✳</div><h3>Brand & strategy</h3><p>Find your point of difference, define your voice and build a brand people remember.</p><button class="learn-more" type="button" data-service="Brand & strategy">Learn more ↗</button></article>
+        <article class="service-card"><span class="card-number">02</span><div class="service-icon">⌘</div><h3>Digital experiences</h3><p>Make every interaction feel intuitive with considered websites and digital products.</p><button class="learn-more" type="button" data-service="Digital experiences">Learn more ↗</button></article>
+        <article class="service-card"><span class="card-number">03</span><div class="service-icon">◈</div><h3>Development</h3><p>Turn ambitious ideas into fast, accessible and dependable digital experiences.</p><button class="learn-more" type="button" data-service="Development">Learn more ↗</button></article>
+      </div>
+    </section>
+
+    <section class="work-section reveal" id="work">
+      <div class="container">
+        <div class="work-heading"><div><p class="eyebrow">A FEW GOOD PROJECTS</p><h2>Made with <em>purpose.</em></h2></div><a class="text-link" href="#contact">Have a project? <span>↗</span></a></div>
+        <div class="filter-bar" role="group" aria-label="Filter projects">
+          <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All projects</button>
+          <button class="filter-button" type="button" data-filter="brand" aria-pressed="false">Branding</button>
+          <button class="filter-button" type="button" data-filter="digital" aria-pressed="false">Digital</button>
+        </div>
+        <div class="project-grid">
+          <article class="project-card" data-category="brand"><div class="project-art project-art-one"><span class="project-stamp">FORM<br>FOLLOWS<br>FEELING</span><span class="project-orb"></span></div><div class="project-meta"><div><h3>Forma Living</h3><p>Brand identity · Digital design</p></div><span>01 / 03</span></div></article>
+          <article class="project-card" data-category="digital"><div class="project-art project-art-two"><div class="project-lines"></div><span class="project-word">FIELD<br>NOTES</span></div><div class="project-meta"><div><h3>Field Notes</h3><p>Strategy · E-commerce</p></div><span>02 / 03</span></div></article>
+          <article class="project-card" data-category="brand"><div class="project-art project-art-three"><span class="project-flower">✳</span><span class="project-word">GOOD<br>THINGS</span></div><div class="project-meta"><div><h3>Good Things Market</h3><p>Art direction · Website</p></div><span>03 / 03</span></div></article>
+        </div>
+        <p class="filter-status" id="filterStatus" aria-live="polite">Showing all projects.</p>
+      </div>
+    </section>
+
+    <section class="about-section section container reveal" id="about">
+      <div class="about-symbol">n<span>.</span></div>
+      <div class="about-copy"><p class="eyebrow">A LITTLE ABOUT US</p><h2>Thoughtful by nature.<br><em>Curious by default.</em></h2><p>Northstar is an independent creative studio built around collaboration, clear thinking and a belief that the best work happens when strategy and imagination meet. We keep things considered, practical and human.</p><a class="text-link" href="#contact">More about our approach <span>→</span></a></div>
+    </section>
+
+    <section class="contact-section reveal" id="contact">
+      <div class="container contact-inner">
+        <p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p><h2>Have a good one<br><em>in mind?</em></h2>
+        <p>Tell us what you're working on. We'd love to hear about it.</p>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label>Your name<input type="text" id="name" name="name" placeholder="Enter your name" required minlength="2"></label>
+            <label>Email address<input type="email" id="email" name="email" placeholder="you@example.com" required></label>
+          </div>
+          <label>Message<textarea id="message" name="message" rows="4" placeholder="Tell us a little about your project..." required minlength="10"></textarea></label>
+          <button class="button button-light" type="submit">Send message <span>↗</span></button>
+          <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner"><a class="brand" href="#home">northstar<span>.</span></a><p>Independent thinking. Intentional making.</p><a href="#home">Back to top ↑</a><small>© 2026 Northstar Studio. Demo concept for a JavaScript interaction task.</small></div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
